@@ -13,6 +13,8 @@
       align-items: center;
       height: 100vh;
       font-family: Arial, sans-serif;
+      position: relative;
+      }
     }
 #timer {
   font-size: 5rem;
@@ -30,13 +32,22 @@
   margin-bottom: 70px;
   text-align: center;
     }
+    #topo {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+    }
   </style>
 </head>
 <body>
+  <h2 id="topo">#Vi&Bu</h2>
   <div>
   <h1 id="titulo">Namorando há:</h1>
 
   <div id="timer">Carregando...</div>
+  </div>
 
 <script>
   const startDate = new Date(2026, 3, 4, 23, 0, 0);
